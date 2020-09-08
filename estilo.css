@@ -1,0 +1,85 @@
+/* caracteristicas basicas pagina web*/
+
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    padding: 20px;
+}
+
+header {
+    width: 100%;
+    background: #494949;
+}
+
+
+/* ocultar el checkbox*/
+
+#btn-menu {
+    display: none;
+}
+
+
+/* caracteristicas de la etiqueta */
+
+header label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: solid white;
+}
+
+header label:hover {
+    cursor: pointer;
+    background: rgb(0, 0, 0, 0.3);
+}
+
+
+/* elementos del menu */
+
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu li:hover {
+    background: rgb(0, 0, 0, 0.3);
+}
+
+.menu li {
+    border-right: solid 1px white;
+}
+
+@media screen and (max-width:750px) {
+    header label {
+        display: block;
+    }
+    .menu {
+        position: absolute;
+        background: #494949;
+        width: 50%;
+        margin-left: -50%;
+        transition: all 0.5s;
+    }
+    .menu li {
+        border-top: solid 1px white;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    #btn-menu:checked~.menu {
+        margin: 0;
+    }
+}
