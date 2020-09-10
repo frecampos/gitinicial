@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/css/lightbox.min.css">
+</head>
+
+<body>
+    <style>
+        .contenedor {
+            margin: 10px;
+        }
+        
+        .contenedor img {
+            width: 150px;
+            height: 150px;
+            border-radius: 5px;
+        }
+        
+        .contenedor img:hover {
+            cursor: pointer;
+            border: solid 5px tomato;
+        }
+    </style>
+    <div class="contenedor">
+        <a href="img/perro1.jpg" data-lightbox="ejemplo1" data-title="perrito chico">
+            <img src="img/perro1.jpg" alt="">
+        </a>
+        <a href="img/perro2.jpg" data-lightbox="ejemplo1" data-title="es un buen amigo">
+            <img src="img/perro2.jpg" alt="">
+        </a>
+        <a href="img/perro3.jpg" data-lightbox="ejemplo1" data-title="es la pequeña cachorra">
+            <img src="img/perro3.jpg" alt="">
+        </a>
+        <a href="img/perro4.jpg" data-lightbox="ejemplo2" data-title="compañero ideal KILTRO">
+            <img src="img/perro4.jpg" alt="">
+        </a>
+        <a href="img/perro5.jpg" data-lightbox="ejemplo2" data-title="es un tierno cachorro">
+            <img src="img/perro5.jpg" alt="">
+        </a>
+    </div>
+    <script src="dist/js/lightbox-plus-jquery.min.js"></script>
+</body>
+
+</html>
