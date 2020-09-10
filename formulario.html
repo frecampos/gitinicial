@@ -4,11 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formularios</title>
+    <link rel="stylesheet" href="estilos_formu.css">
 </head>
 
 <body>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem possimus facere nam fugit consequatur quibusdam excepturi aliquid, doloribus tempora voluptates consectetur, similique consequuntur, mollitia iusto fugiat nulla sequi odio laudantium.</p>
+    <script>
+        function validarTodo() {
+            alert('Envio el Formulario');
+            return false;
+        }
+    </script>
+    <form action="" onsubmit="return validarTodo()" class="formulario">
+        <h1 class="formu-titulo">Formulario de Registro</h1>
+        <div class="contenedor_input">
+            <input class="tama-1" type="text" name="txtNombre" id="txtNombre" required placeholder="ingrese nombre">
+            <input class="tama-1" type="text" name="txtApellido" id="txtApellido" required placeholder="ingrese apellido">
+            <input class="tama-1" type="number" name="txtEdad" id="txtEdad" required placeholder="ingrese edad">
+            <input class="tama-1" type="date" name="txtFecha" id="txtFecha" required placeholder="ingrese fecha nacimiento">
+            <input class="tama-1" type="password" name="txtPass" id="txtPass" required placeholder="">
+
+            <input class="btn-enviar" type="submit" value="Enviar">
+        </div>
+    </form>
 </body>
 
 </html>

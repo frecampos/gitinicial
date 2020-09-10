@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(56, 173, 241);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.formulario {
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+    background: rgb(128, 123, 199);
+    border-radius: 10px;
+}
+
+.formu-titulo {
+    background: cornflowerblue;
+    padding: 15px;
+    border-bottom: cornsilk solid 3px;
+}
+
+.contenedor_input {
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
